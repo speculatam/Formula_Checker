@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="shortcut icon" href="images.png" type="image/png">
+    <meta charset="UTF-8">
+    <title>Formula checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="root">
+        <div class="work-area">
+            <div id='formula-box'>
+				  <input id="formula">formula</input>			  
+            </div>
+            <div id="user-work-area">
+                <div class="checks">
+                    <div style="position:relative;">
+                        Is this a formula?
+                        <span id='isFormula-answer'></span>
+                    </div>
+                    <div>
+                        <label class="container">Yep
+                            <input type="radio" name="isFormula" value="true">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Nope
+                            <input type="radio" name="isFormula" value="false">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="to-check" class="to-check">Check</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="generate.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
+</html>
