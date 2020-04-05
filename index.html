@@ -1,3 +1,12 @@
+<!--
+// Лабораторная работа 1 по дисциплине ЛОИС
+// Выполнена студентом группы 721701 БГУИР Подворным Антоном Игоревичем
+// Этот файл создайт страницу, в которой работают скрипты main.js и generate.js, а также подключаются стили CSS.
+// <25.02.2020 version 1.0>
+//
+// Источники: http://htmlbook.ru/
+// Авторство кода: Подворный Антон Игоревич в соавторстве с Клименковым
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,10 +38,36 @@
                         </label>
                     </div>
                 </div>
+				<div class="checks">
+                    <div style="position:relative;">
+                        Is this a general formula?
+                        <span id='isGeneral-answer'></span>
+                    </div>
+                    <div>
+                        <label class="container">Yep
+                            <input type="radio" name="isGeneral" value="true">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Nope
+                            <input type="radio" name="isGeneral" value="false">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
             <div class="btns">
                 <button id="to-check" class="to-check">Check</button>
             </div>
+			<div>
+				<label class="container">Answer:
+								<label id="general"></label>
+				</label>
+			</div>
+			<div>
+				<label class="container">Answer:
+								<label id="general2"></label>
+				</label>
+			</div>
         </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
